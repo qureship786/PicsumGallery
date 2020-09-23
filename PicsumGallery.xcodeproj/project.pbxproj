@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A805DF1D62E39FCEB3E2A2 /* Pods_PicsumGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2BFC8CB12CF833EF7C7951 /* Pods_PicsumGallery.framework */; };
+		346A3D4B77C5DE0217E9A924 /* Pods_PicsumGalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B40976080C78070A1DB68B /* Pods_PicsumGalleryTests.framework */; };
+		CD18A29E2513278900FDF10C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A29D2513278900FDF10C /* UIViewController+Alert.swift */; };
+		CD18A2A125132C5500FDF10C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A2A025132C5500FDF10C /* Constants.swift */; };
+		CD18A2A325132CD800FDF10C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A2A225132CD800FDF10C /* UIButton+Extension.swift */; };
+		CD2B56752518C26E00C3ABB4 /* PicsumGallary.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2B56742518C26E00C3ABB4 /* PicsumGallary.json */; };
+		CD32B92B2512693E001AAE60 /* ViewController+MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B92A2512693E001AAE60 /* ViewController+MBProgressHUD.swift */; };
+		CD32B92D251286C4001AAE60 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B92C251286C4001AAE60 /* Author.swift */; };
+		CD32B92F251288C1001AAE60 /* AuthorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B92E251288C1001AAE60 /* AuthorsViewModel.swift */; };
+		CD32B93225128C03001AAE60 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B93125128C03001AAE60 /* NetworkError.swift */; };
+		CD32B93425128D03001AAE60 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B93325128D03001AAE60 /* WebService.swift */; };
+		CD32B93B251291C9001AAE60 /* AuthorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B93A251291C9001AAE60 /* AuthorCollectionViewCell.swift */; };
+		CD3C36F12512445600AC995C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C36F02512445600AC995C /* AppDelegate.swift */; };
+		CD3C36F32512445600AC995C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C36F22512445600AC995C /* SceneDelegate.swift */; };
+		CD3C36F52512445600AC995C /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C36F42512445600AC995C /* AuthorsViewController.swift */; };
+		CD3C36F82512445600AC995C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3C36F62512445600AC995C /* Main.storyboard */; };
+		CD3C36FA2512445700AC995C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3C36F92512445700AC995C /* Assets.xcassets */; };
+		CD3C36FD2512445700AC995C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3C36FB2512445700AC995C /* LaunchScreen.storyboard */; };
+		CD3C37082512445700AC995C /* PicsumGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C37072512445700AC995C /* PicsumGalleryTests.swift */; };
+		CD3C37132512449F00AC995C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CD3C37122512449F00AC995C /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD3C37042512445700AC995C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3C36E52512445600AC995C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD3C36EC2512445600AC995C;
+			remoteInfo = PicsumGallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EA8A8E32A777BB820F1348 /* Pods-PicsumGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicsumGallery.debug.xcconfig"; path = "Target Support Files/Pods-PicsumGallery/Pods-PicsumGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2BFC8CB12CF833EF7C7951 /* Pods_PicsumGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicsumGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4AC0E779651333BB28510C /* Pods-PicsumGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicsumGallery.release.xcconfig"; path = "Target Support Files/Pods-PicsumGallery/Pods-PicsumGallery.release.xcconfig"; sourceTree = "<group>"; };
+		B4B40976080C78070A1DB68B /* Pods_PicsumGalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicsumGalleryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD41E09A923AAB5A1EB78070 /* Pods-PicsumGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicsumGalleryTests.release.xcconfig"; path = "Target Support Files/Pods-PicsumGalleryTests/Pods-PicsumGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD18A29D2513278900FDF10C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		CD18A2A025132C5500FDF10C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD18A2A225132CD800FDF10C /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		CD2B56742518C26E00C3ABB4 /* PicsumGallary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PicsumGallary.json; sourceTree = "<group>"; };
+		CD32B92A2512693E001AAE60 /* ViewController+MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+MBProgressHUD.swift"; sourceTree = "<group>"; };
+		CD32B92C251286C4001AAE60 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		CD32B92E251288C1001AAE60 /* AuthorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewModel.swift; sourceTree = "<group>"; };
+		CD32B93125128C03001AAE60 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CD32B93325128D03001AAE60 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		CD32B93A251291C9001AAE60 /* AuthorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD3C36ED2512445600AC995C /* Picsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3C36F02512445600AC995C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD3C36F22512445600AC995C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD3C36F42512445600AC995C /* AuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewController.swift; sourceTree = "<group>"; };
+		CD3C36F72512445600AC995C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD3C36F92512445700AC995C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD3C36FC2512445700AC995C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD3C36FE2512445700AC995C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3C37032512445700AC995C /* PicsumGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicsumGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3C37072512445700AC995C /* PicsumGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumGalleryTests.swift; sourceTree = "<group>"; };
+		CD3C37092512445700AC995C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3C37122512449F00AC995C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F75794FDC5EFD6AD07A21BA1 /* Pods-PicsumGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicsumGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-PicsumGalleryTests/Pods-PicsumGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD3C36EA2512445600AC995C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A805DF1D62E39FCEB3E2A2 /* Pods_PicsumGallery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3C37002512445700AC995C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346A3D4B77C5DE0217E9A924 /* Pods_PicsumGalleryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E935122D9352E252AEAFBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B2BFC8CB12CF833EF7C7951 /* Pods_PicsumGallery.framework */,
+				B4B40976080C78070A1DB68B /* Pods_PicsumGalleryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD18A29F25132C5500FDF10C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A2A025132C5500FDF10C /* Constants.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CD32B926251268AF001AAE60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD32B9362512916F001AAE60 /* Cells */,
+				CD32B93525129148001AAE60 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD32B927251268CD001AAE60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD32B92C251286C4001AAE60 /* Author.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD32B928251268D7001AAE60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD32B92E251288C1001AAE60 /* AuthorsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD32B9292512693E001AAE60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A2A225132CD800FDF10C /* UIButton+Extension.swift */,
+				CD18A29D2513278900FDF10C /* UIViewController+Alert.swift */,
+				CD32B92A2512693E001AAE60 /* ViewController+MBProgressHUD.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CD32B93025128BE5001AAE60 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD32B93325128D03001AAE60 /* WebService.swift */,
+				CD32B93125128C03001AAE60 /* NetworkError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD32B93525129148001AAE60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C36F42512445600AC995C /* AuthorsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD32B9362512916F001AAE60 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD32B93A251291C9001AAE60 /* AuthorCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CD3C36E42512445600AC995C = {
+			isa = PBXGroup;
+			children = (
+				CD3C37122512449F00AC995C /* Podfile */,
+				CD3C36EF2512445600AC995C /* PicsumGallery */,
+				CD3C37062512445700AC995C /* PicsumGalleryTests */,
+				CD3C36EE2512445600AC995C /* Products */,
+				F71574E35ECB252CEF8C27AD /* Pods */,
+				03E935122D9352E252AEAFBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD3C36EE2512445600AC995C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C36ED2512445600AC995C /* Picsum.app */,
+				CD3C37032512445700AC995C /* PicsumGalleryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD3C36EF2512445600AC995C /* PicsumGallery */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A29F25132C5500FDF10C /* Global */,
+				CD32B93025128BE5001AAE60 /* Service */,
+				CD32B9292512693E001AAE60 /* Extension */,
+				CD32B928251268D7001AAE60 /* ViewModel */,
+				CD32B927251268CD001AAE60 /* Models */,
+				CD32B926251268AF001AAE60 /* Views */,
+				CD3C36F02512445600AC995C /* AppDelegate.swift */,
+				CD3C36F22512445600AC995C /* SceneDelegate.swift */,
+				CD3C36F62512445600AC995C /* Main.storyboard */,
+				CD3C36F92512445700AC995C /* Assets.xcassets */,
+				CD3C36FB2512445700AC995C /* LaunchScreen.storyboard */,
+				CD3C36FE2512445700AC995C /* Info.plist */,
+			);
+			path = PicsumGallery;
+			sourceTree = "<group>";
+		};
+		CD3C37062512445700AC995C /* PicsumGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C37072512445700AC995C /* PicsumGalleryTests.swift */,
+				CD2B56742518C26E00C3ABB4 /* PicsumGallary.json */,
+				CD3C37092512445700AC995C /* Info.plist */,
+			);
+			path = PicsumGalleryTests;
+			sourceTree = "<group>";
+		};
+		F71574E35ECB252CEF8C27AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03EA8A8E32A777BB820F1348 /* Pods-PicsumGallery.debug.xcconfig */,
+				6E4AC0E779651333BB28510C /* Pods-PicsumGallery.release.xcconfig */,
+				F75794FDC5EFD6AD07A21BA1 /* Pods-PicsumGalleryTests.debug.xcconfig */,
+				BD41E09A923AAB5A1EB78070 /* Pods-PicsumGalleryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD3C36EC2512445600AC995C /* PicsumGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3C370C2512445700AC995C /* Build configuration list for PBXNativeTarget "PicsumGallery" */;
+			buildPhases = (
+				1AF2F59F671412BBF8CC35F0 /* [CP] Check Pods Manifest.lock */,
+				CD3C36E92512445600AC995C /* Sources */,
+				CD3C36EA2512445600AC995C /* Frameworks */,
+				CD3C36EB2512445600AC995C /* Resources */,
+				488AB2805ACC8416768EA498 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicsumGallery;
+			productName = PicsumGallery;
+			productReference = CD3C36ED2512445600AC995C /* Picsum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD3C37022512445700AC995C /* PicsumGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3C370F2512445700AC995C /* Build configuration list for PBXNativeTarget "PicsumGalleryTests" */;
+			buildPhases = (
+				DBE7A4D3CBB94E1CE27FEFAF /* [CP] Check Pods Manifest.lock */,
+				CD3C36FF2512445700AC995C /* Sources */,
+				CD3C37002512445700AC995C /* Frameworks */,
+				CD3C37012512445700AC995C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3C37052512445700AC995C /* PBXTargetDependency */,
+			);
+			name = PicsumGalleryTests;
+			productName = PicsumGalleryTests;
+			productReference = CD3C37032512445700AC995C /* PicsumGalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD3C36E52512445600AC995C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Parvez Qureshi";
+				TargetAttributes = {
+					CD3C36EC2512445600AC995C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CD3C37022512445700AC995C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD3C36EC2512445600AC995C;
+					};
+				};
+			};
+			buildConfigurationList = CD3C36E82512445600AC995C /* Build configuration list for PBXProject "PicsumGallery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD3C36E42512445600AC995C;
+			productRefGroup = CD3C36EE2512445600AC995C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD3C36EC2512445600AC995C /* PicsumGallery */,
+				CD3C37022512445700AC995C /* PicsumGalleryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD3C36EB2512445600AC995C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3C36FD2512445700AC995C /* LaunchScreen.storyboard in Resources */,
+				CD3C36FA2512445700AC995C /* Assets.xcassets in Resources */,
+				CD3C37132512449F00AC995C /* Podfile in Resources */,
+				CD3C36F82512445600AC995C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3C37012512445700AC995C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2B56752518C26E00C3ABB4 /* PicsumGallary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF2F59F671412BBF8CC35F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicsumGallery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		488AB2805ACC8416768EA498 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicsumGallery/Pods-PicsumGallery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicsumGallery/Pods-PicsumGallery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicsumGallery/Pods-PicsumGallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE7A4D3CBB94E1CE27FEFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicsumGalleryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD3C36E92512445600AC995C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD32B92B2512693E001AAE60 /* ViewController+MBProgressHUD.swift in Sources */,
+				CD18A2A125132C5500FDF10C /* Constants.swift in Sources */,
+				CD32B93225128C03001AAE60 /* NetworkError.swift in Sources */,
+				CD32B93425128D03001AAE60 /* WebService.swift in Sources */,
+				CD3C36F52512445600AC995C /* AuthorsViewController.swift in Sources */,
+				CD18A2A325132CD800FDF10C /* UIButton+Extension.swift in Sources */,
+				CD3C36F12512445600AC995C /* AppDelegate.swift in Sources */,
+				CD18A29E2513278900FDF10C /* UIViewController+Alert.swift in Sources */,
+				CD32B93B251291C9001AAE60 /* AuthorCollectionViewCell.swift in Sources */,
+				CD32B92F251288C1001AAE60 /* AuthorsViewModel.swift in Sources */,
+				CD3C36F32512445600AC995C /* SceneDelegate.swift in Sources */,
+				CD32B92D251286C4001AAE60 /* Author.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3C36FF2512445700AC995C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3C37082512445700AC995C /* PicsumGalleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD3C37052512445700AC995C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD3C36EC2512445600AC995C /* PicsumGallery */;
+			targetProxy = CD3C37042512445700AC995C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD3C36F62512445600AC995C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3C36F72512445600AC995C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD3C36FB2512445700AC995C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3C36FC2512445700AC995C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD3C370A2512445700AC995C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD3C370B2512445700AC995C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD3C370D2512445700AC995C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EA8A8E32A777BB820F1348 /* Pods-PicsumGallery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X99MVW79D;
+				INFOPLIST_FILE = PicsumGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvez.qureshi.PicsumGallery;
+				PRODUCT_NAME = Picsum;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD3C370E2512445700AC995C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4AC0E779651333BB28510C /* Pods-PicsumGallery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X99MVW79D;
+				INFOPLIST_FILE = PicsumGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvez.qureshi.PicsumGallery;
+				PRODUCT_NAME = Picsum;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD3C37102512445700AC995C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75794FDC5EFD6AD07A21BA1 /* Pods-PicsumGalleryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X99MVW79D;
+				INFOPLIST_FILE = PicsumGalleryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvez.qureshi.PicsumGalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picsum.app/Picsum";
+			};
+			name = Debug;
+		};
+		CD3C37112512445700AC995C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD41E09A923AAB5A1EB78070 /* Pods-PicsumGalleryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X99MVW79D;
+				INFOPLIST_FILE = PicsumGalleryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvez.qureshi.PicsumGalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picsum.app/Picsum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD3C36E82512445600AC995C /* Build configuration list for PBXProject "PicsumGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3C370A2512445700AC995C /* Debug */,
+				CD3C370B2512445700AC995C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3C370C2512445700AC995C /* Build configuration list for PBXNativeTarget "PicsumGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3C370D2512445700AC995C /* Debug */,
+				CD3C370E2512445700AC995C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3C370F2512445700AC995C /* Build configuration list for PBXNativeTarget "PicsumGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3C37102512445700AC995C /* Debug */,
+				CD3C37112512445700AC995C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD3C36E52512445600AC995C /* Project object */;
+}
